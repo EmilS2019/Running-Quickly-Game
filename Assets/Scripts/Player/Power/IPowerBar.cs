@@ -7,4 +7,5 @@ public interface IPowerBar
     float PowerAmount { get; set; }
     void ChangePowerAmount();
     float GetPowerAmount();
+    PowerBar.Statuses CurrentStatus { get; set; }
 }
