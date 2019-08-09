@@ -36,7 +36,7 @@ public class SuperSpeed : SuperPower
                 playerMovement.ChangeSpeed(newSpeed);
                 break;
             case PowerBar.Statuses.Repleneshing:
-                playerMovement.ChangeSpeed(originalSpeed - 1f);
+                playerMovement.ChangeSpeed(originalSpeed - 3f);
                 break;
             default:
                 break;
