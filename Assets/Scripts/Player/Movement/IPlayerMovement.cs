@@ -5,6 +5,6 @@ using UnityEngine;
 public interface IPlayerMovement {
 
     void ChangeSpeed(float amount);
-    //float Speed { get; set; }
+    float Speed { get; set; }
 
 }

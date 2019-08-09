@@ -14,18 +14,29 @@ public class SuperSpeed : SuperPower
     {
         powerBar = FindObjectOfType<PowerBar>();
         playerMovement = FindObjectOfType<PlayerMovement>();
+        StartCoroutine(GetSpeedFromPlayerMovement());
     }
+
+    IEnumerator GetSpeedFromPlayerMovement ()
+    {
+        yield return new WaitForFixedUpdate();
+        originalSpeed = playerMovement.Speed;
+    }
+
+    float originalSpeed;
 
     void Update()
     {
         switch (powerBar.CurrentStatus)
         {
             case PowerBar.Statuses.Idle:
-                playerMovement.ChangeSpeed();
+                playerMovement.ChangeSpeed(originalSpeed);
                 break;
             case PowerBar.Statuses.Using:
+                playerMovement.ChangeSpeed(newSpeed);
                 break;
             case PowerBar.Statuses.Repleneshing:
+                playerMovement.ChangeSpeed(originalSpeed - 1f);
                 break;
             default:
                 break;

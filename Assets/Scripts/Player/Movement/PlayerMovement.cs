@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour, IPlayerMovement {
 
     public float playerSpeed;
-    //[HideInInspector] public float Speed { get; set; }
-    float Speed;
+    [HideInInspector] public float Speed { get; set; } 
+    //float Speed;
 
     void Start() { ChangeSpeed(playerSpeed); }
 
