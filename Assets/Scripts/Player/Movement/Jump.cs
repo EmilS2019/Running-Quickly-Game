@@ -7,11 +7,6 @@ public class Jump : MonoBehaviour {
     public float JumpHeight;
     public bool Grounded;
 
-    void Start()
-    {
-
-    }
-
     void OnCollisionEnter(Collision col)
     {
         Grounded = true;
