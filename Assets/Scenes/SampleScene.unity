@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 6f29dc00f2b037c4fad2426e0a8352ee,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -863,7 +864,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4505892536299698, guid: 7180c114902196843b0ea1046cf809a1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.75
+      value: -1.277
       objectReference: {fileID: 0}
     - target: {fileID: 4505892536299698, guid: 7180c114902196843b0ea1046cf809a1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -888,6 +889,15 @@ Prefab:
     - target: {fileID: 4505892536299698, guid: 7180c114902196843b0ea1046cf809a1, type: 2}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4505892536299698, guid: 7180c114902196843b0ea1046cf809a1, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.7720401
+      objectReference: {fileID: 0}
+    - target: {fileID: 54513183111660676, guid: 7180c114902196843b0ea1046cf809a1,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7180c114902196843b0ea1046cf809a1, type: 2}
@@ -1093,7 +1103,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1185061056}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.9, y: 8.5, z: 2.8}
+  m_LocalPosition: {x: -22.9, y: 8.5, z: 2.27}
   m_LocalScale: {x: 10.4136505, y: 31.611677, z: 19.202772}
   m_Children: []
   m_Father: {fileID: 0}
