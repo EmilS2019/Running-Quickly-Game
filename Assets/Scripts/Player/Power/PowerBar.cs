@@ -25,7 +25,7 @@ public class PowerBar : MonoBehaviour, IPowerBar {
 
     Statuses ChangeCurrentStatus()
     {
-        if (Input.GetMouseButton(1) && PowerAmount >= 0.01f)
+        if ((Input.GetMouseButton(1) || Input.GetKey(KeyCode.LeftShift)) && PowerAmount >= 0.01f)
         {
             return Statuses.Using;
         }
